@@ -5,58 +5,74 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/07/01 15:36:45 by ihadj             #+#    #+#              #
-#    Updated: 2025/07/10 17:12:02 by ihadj            ###   ########.fr        #
+#    Created: 2025/07/18 18:50:58 by ihadj             #+#    #+#              #
+#    Updated: 2025/07/20 19:57:05 by ihadj            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = philosophers
 
-# Directories
-SRCS_DIR    = srcs
-INCLUDES_DIR= includes
-LIBFT_DIR   = libft
+# ===========================[ Variables générales ]===========================
 
-# Compiler
+NAME        = philo
+SRC_DIR     = srcs
+BUILD_DIR   = build
+INC         = includes
 CC          = cc
-CFLAGS      = -Wall -Wextra -Werror -g3 -I$(INCLUDES_DIR) -I$(LIBFT_DIR)
+CFLAGS      = -Wall -Wextra -Werror -g3 -I$(INC)
 
-# Libraries
-LIBFT_A     = $(LIBFT_DIR)/libft.a
-PRINTF_DIR  = libft/printf
-PRINTF_A    = $(PRINTF_DIR)/libftprintf.a
+SRC         = $(SRC_DIR)/main.c \
+              $(SRC_DIR)/init/init.c \
+              $(SRC_DIR)/parsing/parsing.c \
+              $(SRC_DIR)/parsing/error.c \
+              $(SRC_DIR)/routine/routine.c \
+              $(SRC_DIR)/routine/routine2.c	\
+              $(SRC_DIR)/routine/time.c \
+              $(SRC_DIR)/monitoring/monitoring.c \
+              $(SRC_DIR)/simulation/simulation.c \
+              $(SRC_DIR)/exit/exit.c \
+              $(SRC_DIR)/utils/utils.c \
+			  $(SRC_DIR)/utils/color.c
 
-SRCS = 	$(SRCS_DIR)/utils/utils.c \
-	$(SRCS_DIR)/init/init.c \
-	$(SRCS_DIR)/main.c
 
-OBJS = $(SRCS:.c=.o)
+OBJ         = $(addprefix $(BUILD_DIR)/, $(subst $(SRC_DIR)/,,$(SRC:.c=.o)))
 
-# Main rule
-all: $(LIBFT_A) $(NAME)
+# ================================[ Couleurs ]================================
 
-$(NAME): $(OBJS) $(LIBFT_A)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME) $(LIBFT_A)
+GREEN       = \033[0;32m
+RED         = \033[0;31m
+BLUE        = \033[0;34m
+BROWN       = \033[0;33m
+BLUE        = \033[1;34m
+END         = \033[0m
+TITLE       = \033[1m
 
-# Compil rule
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# ================================[ Règles Make ]==============================
 
-# Librairies rules
-$(PRINTF_A):
-	make -C $(PRINTF_DIR)
-$(LIBFT_A):
-	make -C $(LIBFT_DIR)
+all: $(NAME)
 
-# Cleaning rules
-clean:
-	rm -f $(OBJS)
-	make -C $(LIBFT_DIR) clean
+$(NAME): $(OBJ)
+	@echo "$(GREEN)🔘 $(TITLE)make $(NAME)$(END)"
+	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME) > /dev/null && \
+	echo "   $(GREEN)⤷ $(END)Executable: $(GREEN)$(NAME)$(END)"
 
-fclean: clean
-	rm -f $(NAME)
-	make -C $(LIBFT_DIR) fclean
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(dir $@)
+	@if [ -z "$$(ls -A $(BUILD_DIR) 2>/dev/null)" ]; then \
+		echo "$(GREEN)🔘 $(TITLE)Create object files$(END)"; fi
+	@$(CC) $(CFLAGS) -c $< -o $@ > /dev/null && \
+	printf "   $(GREEN)⤷ $(BROWN)%-38s $(BLUE)⟹  $(BROWN)%s$(END)\n" "$<" "$@"
 
-re: fclean all
+# ================================[ Nettoyage ]===============================
 
-.PHONY: all clean fclean re
+c clean:
+	@echo "$(GREEN)🔘 $(TITLE)make clean$(END)"
+	@rm -f $(OBJ) && echo "   $(GREEN)⤷ $(END)Removed object files"
+
+fc fclean:
+	@echo "$(GREEN)🔘 $(TITLE)make fclean$(END)"
+	@if [ -f $(NAME) ]; then rm -f $(NAME) && echo "   $(GREEN)⤷ $(END)Removed binary $(NAME)"; fi
+	@if [ -d $(BUILD_DIR) ]; then rm -rf $(BUILD_DIR) && echo "   $(GREEN)⤷ $(END)Removed build dir"; fi
+
+re: fc all
+
+.PHONY: all clean c fclean fc re
