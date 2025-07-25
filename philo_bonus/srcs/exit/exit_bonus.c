@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 14:33:54 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 19:13:07 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 15:49:15 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	one_death_exit(t_philo *philo, pid_t pid)
 {
-	size_t	i;
+	int		i;
 
 	i = 0;
 	while (i < philo->data->philos_nb)
@@ -28,19 +28,22 @@ void	one_death_exit(t_philo *philo, pid_t pid)
 	sem_close(philo->data->print);
 	sem_close(philo->data->forks);
 	free(philo->data->pids);
-	free(philo);	
+	free(philo);
+	exit(0);
 }
 
 int	wait_pids(t_philo *philos)
 {
-	size_t	i;
+	int		i;
 	int		status;
 	int		exit_code;
 	pid_t	pid;
+	int		all_eat;
 
+	all_eat = 0;
 	status = 0;
 	i = -1;
-	while (++i < philos->data->philos_nb)
+	while (++i < philos->data->philos_nb && all_eat != philos->data->philos_nb)
 	{
 		pid = waitpid(-1, &status, 0);
 		if (pid == -1)
@@ -49,11 +52,10 @@ int	wait_pids(t_philo *philos)
 		{
 			exit_code = WEXITSTATUS(status);
 			if (exit_code == DEAD_CODE)
-				return (one_death_exit(philos, philos->data->pids[i]), 42);
+				return (one_death_exit(philos, philos->data->pids[i]), 0);
 			if (exit_code == FULL_CODE)
-				i++;
+				all_eat++;
 		}
 	}
 	return (0);
 }
-

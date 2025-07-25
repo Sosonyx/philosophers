@@ -6,12 +6,12 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:15:28 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 19:14:38 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 14:00:08 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILOSOPHERS_BONUS_H
-#define PHILOSOPHERS_BONUS_H
+# define PHILOSOPHERS_BONUS_H
 
 // ==========================[ Libs & Macros ]==========================
 
@@ -53,12 +53,11 @@ typedef struct s_philo	t_philo;
 
 typedef struct s_data
 {
-	size_t			philos_nb;
+	int				philos_nb;
 	size_t			time_to_die;
 	size_t			time_to_eat;
 	size_t			time_to_sleep;
-	size_t			max_meals;
-
+	int				max_meals;
 	sem_t			*forks;
 	sem_t			*print;
 	sem_t			*death;
@@ -105,7 +104,6 @@ void		*routine(void *arg);
 void		wait_threads(t_philo *philos, size_t threads_nb);
 int			create_processes(t_philo *philos);
 
-
 // ==========================[ Routine actions ]===========================
 
 void		eat(t_philo *philo);
@@ -122,12 +120,10 @@ int			is_dead(t_philo *philo);
 bool		simulation_ended(t_philo *philo);
 void		create_thread(t_philo *philo);
 
-
 // ===========================[ Time gestion ]==============================
 
 long		get_time(void);
 int			ft_usleep(size_t milliseconds, t_philo *philo);
 int			wait_pids(t_philo *philos);
-
 
 #endif

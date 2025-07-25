@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 16:22:14 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 17:31:49 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 15:43:54 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 t_philo	*init_philos(t_data *data)
 {
 	t_philo	*philos;
-	size_t	i;
+	int		i;
 
 	philos = malloc(sizeof(t_philo) * data->philos_nb);
 	if (!philos)
@@ -37,4 +37,3 @@ t_philo	*init_philos(t_data *data)
 	}
 	return (philos);
 }
-

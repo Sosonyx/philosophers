@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:38:56 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 18:03:23 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 14:00:20 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,20 +24,16 @@ static void	take_forks(t_philo *philo)
 	print_action(philo, "has taken a fork");
 }
 
-
 static void	release_forks(t_philo *philo)
 {
 	sem_post(philo->data->forks);
 	sem_post(philo->data->forks);
 }
 
-
 void	eat(t_philo *philo)
 {
 	take_forks(philo);
-	sem_wait(philo->data->print);
 	philo->last_meal = get_time();
-	sem_post(philo->data->print);
 	print_action(philo, "is eating");
 	ft_usleep(philo->data->time_to_eat, philo);
 	release_forks(philo);
@@ -66,7 +62,7 @@ void	think(t_philo *philo)
 	if (simulation_ended(philo))
 		return ;
 	print_action(philo, "is thinking");
-	if (philo->data->philos_nb % 2 || \
-		philo->data->time_to_die < philo->data->time_to_eat)
-		ft_usleep(5, philo);
+	// if (philo->data->philos_nb % 2 || \
+	// 	philo->data->time_to_die < philo->data->time_to_eat)
+	// 	ft_usleep(5, philo);
 }

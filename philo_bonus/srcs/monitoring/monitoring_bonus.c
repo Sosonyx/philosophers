@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:41:18 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 19:14:26 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 14:01:38 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,26 @@ void	*monitoring(void *ptr)
 {
 	t_philo	*philo;
 	size_t	time_since_meal;
-	
+
 	philo = (t_philo *)ptr;
+	philo->last_meal = philo->start_time;
 	while (1)
 	{
 		time_since_meal = get_time() - philo->last_meal;
 		if (time_since_meal >= philo->data->time_to_die)
 		{
-			sem_wait(philo->data->print);
-			printf(CR"%ld %d died\n"CE, get_time() - philo->start_time, philo->id);
-			sem_post(philo->data->print);
+			if (sem_wait(philo->data->death) == 0)
+			{
+				sem_wait(philo->data->print);
+				printf("%ld %d died\n", get_time() \
+				- philo->start_time, philo->id);
+				sem_post(philo->data->print);
+			}
 			exit(DEAD_CODE);
 		}
-		usleep(500);
+		usleep(100);
 	}
 	return (NULL);
 }
 
+// printf(CR"%ld %d died\n"E, get_time() - philo->start_time, philo->id);

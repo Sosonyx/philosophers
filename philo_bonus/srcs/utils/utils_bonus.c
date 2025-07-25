@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   utils_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:50:55 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/23 17:16:00 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 13:44:15 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,17 +58,18 @@ void	print_action(t_philo *philo, char *msg)
 	long	timestamp;
 	char	*color;
 
-	sem_post(philo->data->print);
-	sem_post(philo->data->death);
+	sem_wait(philo->data->death);
 	if (philo->dead)
 	{
-		sem_wait(philo->data->death);
-		sem_wait(philo->data->print);
+		sem_post(philo->data->death);
 		return ;
 	}
-	sem_wait(philo->data->death);
+	sem_post(philo->data->death);
+	sem_wait(philo->data->print);
 	color = generate_color(philo->id);
 	timestamp = get_time() - philo->start_time;
-	printf("%s%ld %d %s%s\n", color, timestamp, philo->id, msg, E);
-	sem_wait(philo->data->print);
+	printf("%ld %d %s\n", timestamp, philo->id, msg);
+	sem_post(philo->data->print);
 }
+
+	// printf("%s%ld %d %s%s\n", color, timestamp, philo->id, msg, E);

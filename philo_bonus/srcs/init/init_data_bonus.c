@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 16:06:12 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 17:32:47 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/25 13:55:01 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ static void	init_sems(t_data *data)
 	sem_unlink("/start");
 	data->forks = sem_open("/fork", O_CREAT | O_EXCL, 0644, data->philos_nb);
 	data->print = sem_open("/print", O_CREAT | O_EXCL, 0644, 1);
-	data->death = sem_open("/dead", O_CREAT | O_EXCL, 0644, 0);
+	data->death = sem_open("/dead", O_CREAT | O_EXCL, 0644, 1);
 	data->start = sem_open("/start", O_CREAT | O_EXCL, 0644, 0);
 }
 
 int	init_data(t_data *data, char **av)
 {
-	if (!ft_atoi_secure(av[1], &data->philos_nb)
+	if (!ft_atoi_secure(av[1], (size_t *)&data->philos_nb)
 		|| data->philos_nb <= 0 || data->philos_nb > PHILO_MAX)
 		return (input_error("Invalid number of philosophers", wrong_range));
 	if (!ft_atoi_secure(av[2], &data->time_to_die)
@@ -40,7 +40,7 @@ int	init_data(t_data *data, char **av)
 		return (input_error("Invalid time_to_sleep", wrong_range));
 	if (av[5])
 	{
-		if (!ft_atoi_secure(av[5], &data->max_meals)
+		if (!ft_atoi_secure(av[5], (size_t *)&data->max_meals)
 			|| data->max_meals <= 0)
 			return (input_error("Invalid max_meals", wrong_range));
 	}
