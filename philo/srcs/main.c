@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 15:37:34 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/23 14:57:38 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/15 15:05:31 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ int	main(int ac, char **av)
 	philos = init_philos(&data);
 	if (!philos)
 		return (ft_putstr_fd("Bad init\n", 2), 1);
-	start_simulation(philos);
+	if (!start_simulation(philos))
+		return (ft_putstr_fd("Failing to start the simulation\n", 2), 1);
 	clean_exit(philos, philos->data->philos_nb);
 	return (0);
 }

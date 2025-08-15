@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:38:56 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/23 17:18:33 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/28 17:32:19 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,34 +22,10 @@ bool	simulation_ended(t_philo *philo)
 	return (ended);
 }
 
-// void	base_delay(t_philo *philo)
-// {
-// 	int	base_delay;
-
-// 	base_delay = (philo->id % 5) * 20;
-// 	if (philo->id % 2 == 0)
-// 		base_delay += 50;
-// 	usleep(base_delay);
-// }
-
-// void	smart_delay(t_philo *philo)
-// {
-// 	if (philo->data->philos_nb == 1)
-// 		return ;
-// 	if (philo->id % 2 != 0)
-// 		ft_usleep(philo->data->time_to_eat * 0.9, philo);
-// 	else if (philo->id % 3 == 0)
-// 		ft_usleep(philo->data->time_to_eat * 0.6, philo);
-// 	else if (philo->id % 5 == 0)
-// 		ft_usleep(philo->data->time_to_eat * 0.3, philo);
-// 	else
-// 		ft_usleep(5, philo);
-// }
-
 static void	day_loop(t_philo *philos)
 {
 	if (philos->data->philos_nb > 1 && philos->id % 2 != 0)
-		ft_usleep(philos->data->time_to_eat * 0.9, philos);
+		ft_usleep(0.9 * philos->data->time_to_eat, philos);
 	pthread_mutex_lock(&philos->read);
 	if (philos->data->philos_nb == 1)
 	{
@@ -69,6 +45,8 @@ static void	day_loop(t_philo *philos)
 		if (simulation_ended(philos))
 			break ;
 		think(philos);
+		if (philos->data->philos_nb == 3 || philos->data->philos_nb == 5)
+			ft_usleep(0.5 * (philos->data->time_to_eat), philos);
 	}
 }
 

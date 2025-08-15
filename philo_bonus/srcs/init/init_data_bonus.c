@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 16:06:12 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/25 13:55:01 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/13 13:00:11 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,16 @@ static void	init_sems(t_data *data)
 	sem_unlink("/print");
 	sem_unlink("/dead");
 	sem_unlink("/start");
+	sem_unlink("/write");
+	sem_unlink("/read");
+	sem_unlink("/print_lock");
 	data->forks = sem_open("/fork", O_CREAT | O_EXCL, 0644, data->philos_nb);
 	data->print = sem_open("/print", O_CREAT | O_EXCL, 0644, 1);
-	data->death = sem_open("/dead", O_CREAT | O_EXCL, 0644, 1);
+	data->death = sem_open("/dead", O_CREAT | O_EXCL, 0644, 0);
 	data->start = sem_open("/start", O_CREAT | O_EXCL, 0644, 0);
+	data->write = sem_open("/write", O_CREAT | O_EXCL, 0644, 1);
+	data->read = sem_open("/read", O_CREAT | O_EXCL, 0644, 1);
+	data->print_lock = sem_open("/print_lock", O_CREAT | O_EXCL, 0644, 1);
 }
 
 int	init_data(t_data *data, char **av)

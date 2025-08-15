@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 15:37:34 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/24 19:57:31 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/15 15:48:25 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ int	main(int ac, char **av)
 		return (ft_putstr_fd("Bad init\n", 2), 1);
 	create_processes(philos);
 	wait_pids(philos);
-	return (0);
+	clean_exit(philos, 0);
 }

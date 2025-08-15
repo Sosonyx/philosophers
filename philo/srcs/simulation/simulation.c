@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 15:07:30 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/22 19:23:11 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/15 14:16:50 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	start_simulation(t_philo *philos)
 	size_t		start_time;
 
 	if (!init_threads(philos))
-		return (1);
+		return (0);
 	pthread_mutex_lock(&philos->data->start_mtx);
 	start_time = get_time();
 	philos->data->start = start_time;

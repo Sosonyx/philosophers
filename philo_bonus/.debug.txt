@@ -1,0 +1,1 @@
+timeout: failed to run command ‘../philo_bonus/philo’: No such file or directory

@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:50:55 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/25 13:44:15 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/13 13:01:24 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,18 +58,11 @@ void	print_action(t_philo *philo, char *msg)
 	long	timestamp;
 	char	*color;
 
-	sem_wait(philo->data->death);
-	if (philo->dead)
-	{
-		sem_post(philo->data->death);
-		return ;
-	}
-	sem_post(philo->data->death);
+	sem_wait(philo->data->print_lock);
+	sem_post(philo->data->print_lock);
 	sem_wait(philo->data->print);
-	color = generate_color(philo->id);
 	timestamp = get_time() - philo->start_time;
-	printf("%ld %d %s\n", timestamp, philo->id, msg);
+	color = generate_color(philo->id);
+	printf("%s%ld %d %s%s\n", color, timestamp, philo->id, msg, E);
 	sem_post(philo->data->print);
 }
-
-	// printf("%s%ld %d %s%s\n", color, timestamp, philo->id, msg, E);

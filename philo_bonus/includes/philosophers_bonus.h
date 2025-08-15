@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:15:28 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/25 14:00:08 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/07/29 15:15:59 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,9 @@ typedef struct s_data
 	sem_t			*print;
 	sem_t			*death;
 	sem_t			*start;
+	sem_t			*write;
+	sem_t			*read;
+	sem_t			*print_lock;
 	pid_t			*pids;
 }	t_data;
 
@@ -91,17 +94,14 @@ void		wrong_range(void);
 int			ft_isdigit(int c);
 size_t		ft_atoi_secure(const char *str, size_t *data);
 void		ft_putstr_fd(char *s, int fd);
-// void		clean_exit(t_philo *philos, int i);
-int			error_exit(t_philo *philos, int i);
+void		clean_exit(t_philo *philos, int exit_code);
 char		*generate_color(int id);
 void		one_death_exit(t_philo *philo, pid_t pid);
+
 // ===========================[ Loop ]=====================================
 
-int			start_simulation(t_philo *philos);
-int			init_threads(t_philo *philos);
 void		*monitoring(void *ptr);
 void		*routine(void *arg);
-void		wait_threads(t_philo *philos, size_t threads_nb);
 int			create_processes(t_philo *philos);
 
 // ==========================[ Routine actions ]===========================

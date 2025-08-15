@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 14:33:54 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/22 16:12:40 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/15 14:25:58 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	clean_exit(t_philo *philos, int mtx_already_init)
 	if (philos->data->all_set == -42)
 	{
 		free(philos);
-		exit(1);
+		return ;
 	}
 	free(philos);
 }
