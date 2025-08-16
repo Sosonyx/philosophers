@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 14:33:54 by ihadj             #+#    #+#             */
-/*   Updated: 2025/08/16 17:02:43 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/16 17:06:12 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	clean_exit(t_philo *philos, int exit_code)
 	if (philos && philos->data->death)
 		sem_close(philos->data->death);
 	if (philos && philos->data->start)
-		sem_close(philos->data->start);		
+		sem_close(philos->data->start);
 	if (philos && philos->data->print_lock)
 		sem_close(philos->data->print_lock);
 	if (philos && philos->data->pids)
@@ -54,7 +54,7 @@ void	child_exit(t_philo *philos, int exit_code, int i)
 	if (philos && philos->data->pids)
 		free(philos->data->pids);
 	if (philos)
-		free(philos - i);		
+		free(philos - i);
 	exit(exit_code);
 }
 
@@ -116,11 +116,11 @@ static int	wait_full(t_philo *philos)
 
 int	wait_pids(t_philo *philos)
 {
-	int dead_pid = -1;
+	int	dead_pid;
 
+	dead_pid = -1;
 	if (wait_death(philos, &dead_pid))
 		return (0);
 	wait_full(philos);
 	return (0);
 }
-

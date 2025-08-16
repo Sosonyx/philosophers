@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:15:28 by ihadj             #+#    #+#             */
-/*   Updated: 2025/08/16 17:02:50 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/16 17:05:22 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,6 @@ void		print_action(t_philo *philo, char *msg);
 
 bool		simulation_ended(t_philo *philo);
 pthread_t	create_thread(t_philo *philo);
-
 
 // ===========================[ Time gestion ]==============================
 

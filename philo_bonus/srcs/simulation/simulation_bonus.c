@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 15:07:30 by ihadj             #+#    #+#             */
-/*   Updated: 2025/08/16 17:03:04 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/16 17:06:21 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,41 +61,10 @@ int	is_full(t_philo philo)
 	return (0);
 }
 
-// int	create_processes(t_philo *philos)
-// {
-// 	int		i;
-// 	pid_t	pid;
-
-// 	i = -1;
-// 	while (++i < philos->data->philos_nb)
-// 	{
-// 		pid = fork();
-// 		if (pid == -1)
-// 			return (0);
-// 		if (pid == 0)
-// 		{
-// 			sem_wait(philos[i].data->start);
-// 			philos[i].start_time = get_time();
-// 			philos[i].last_meal = philos[i].start_time;
-// 			create_thread(&philos[i]);
-// 			routine(&philos[i]);
-// 			child_exit(philos, FULL_CODE);
-// 		}
-// 		else
-// 			philos->data->pids[i] = pid;
-// 	}
-// 	i = -1;
-// 	while (++i < philos->data->philos_nb)
-// 		sem_post(philos[i].data->start);
-// 	sem_close(philos->data->start);
-// 	return (1);
-// }
-
-
 int	create_processes(t_philo *philos)
 {
-	int		i;
-	pid_t	pid;
+	int			i;
+	pid_t		pid;
 	pthread_t	thread;
 
 	i = -1;
