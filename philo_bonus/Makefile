@@ -6,7 +6,7 @@
 #    By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/18 18:50:58 by ihadj             #+#    #+#              #
-#    Updated: 2025/07/24 19:05:18 by ihadj            ###   ########.fr        #
+#    Updated: 2025/08/16 17:31:48 by ihadj            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,12 +26,14 @@ SRC         = $(SRC_DIR)/main_bonus.c \
               $(SRC_DIR)/init/init_philos_bonus.c \
               $(SRC_DIR)/parsing/parsing_bonus.c \
               $(SRC_DIR)/routine/routine_bonus.c \
+              $(SRC_DIR)/routine/actions_bonus.c \
               $(SRC_DIR)/routine/time_bonus.c \
               $(SRC_DIR)/monitoring/monitoring_bonus.c \
               $(SRC_DIR)/simulation/simulation_bonus.c \
               $(SRC_DIR)/exit/error_bonus.c \
               $(SRC_DIR)/utils/utils_bonus.c \
               $(SRC_DIR)/exit/exit_bonus.c \
+              $(SRC_DIR)/exit/waiting_gestion_bonus.c \
 			  $(SRC_DIR)/utils/color_bonus.c
 
 OBJ         = $(addprefix $(BUILD_DIR)/, $(subst $(SRC_DIR)/,,$(SRC:.c=.o)))
