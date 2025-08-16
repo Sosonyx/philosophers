@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:15:28 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/29 15:15:59 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/16 17:02:50 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,8 @@ int			ft_isdigit(int c);
 size_t		ft_atoi_secure(const char *str, size_t *data);
 void		ft_putstr_fd(char *s, int fd);
 void		clean_exit(t_philo *philos, int exit_code);
+void		child_exit(t_philo *philos, int exit_code, int i);
+
 char		*generate_color(int id);
 void		one_death_exit(t_philo *philo, pid_t pid);
 
@@ -109,16 +111,13 @@ int			create_processes(t_philo *philos);
 void		eat(t_philo *philo);
 void		nap(t_philo *philo);
 void		think(t_philo *philo);
-void		eat_alone(t_philo *philo);
 void		print_action(t_philo *philo, char *msg);
 
 // ===========================[ Monitoring ]===============================
 
-int			someone_died(t_philo *philos);
-int			everyone_ate(t_philo *philos);
-int			is_dead(t_philo *philo);
 bool		simulation_ended(t_philo *philo);
-void		create_thread(t_philo *philo);
+pthread_t	create_thread(t_philo *philo);
+
 
 // ===========================[ Time gestion ]==============================
 
