@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:41:18 by ihadj             #+#    #+#             */
-/*   Updated: 2025/08/15 15:02:48 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/18 10:48:39 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,20 +101,16 @@ int	everyone_ate(t_philo *philos)
 void	*monitoring(void *ptr)
 {
 	t_data	*data;
-	t_philo	*philos;
 
 	data = (t_data *)ptr;
-	philos = data->philos;
-	if (!philos)
-		return (NULL);
-	while (!simulation_ended(philos))
+	while (!simulation_ended(data->philos))
 	{
-		if ((someone_died(philos) == true || everyone_ate(philos) == true))
+		if (someone_died(data->philos) || everyone_ate(data->philos))
 			break ;
-		if (philos->data->philos_nb >= 100)
+		if (data->philos_nb >= 100)
 			usleep(1);
 		else
 			usleep(data->time_to_die / 10);
 	}
-	return (ptr);
+	return (NULL);
 }

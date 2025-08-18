@@ -6,7 +6,7 @@
 /*   By: ihadj <ihadj@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:38:56 by ihadj             #+#    #+#             */
-/*   Updated: 2025/07/28 17:32:19 by ihadj            ###   ########.fr       */
+/*   Updated: 2025/08/18 11:02:16 by ihadj            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ static void	day_loop(t_philo *philos)
 	pthread_mutex_unlock(&philos->read);
 	while (!simulation_ended(philos))
 	{
-		if (simulation_ended(philos))
-			break ;
 		eat(philos);
 		if (simulation_ended(philos))
 			break ;
