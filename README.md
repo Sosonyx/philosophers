@@ -19,15 +19,16 @@
     <img src="https://img.shields.io/github/last-commit/dpetrosy/42-Philosophers?style=for-the-badge" />
   </p>
 
-  <div style="font-size:1.3em; line-height:2;">
-    <span><a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a></span>
-    &nbsp;&bull;&nbsp;
-    <span><a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a></span>
-    &nbsp;&bull;&nbsp;
-    <span><a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a></span>
-    &nbsp;&bull;&nbsp;
-    <span><a href="#usage" style="text-decoration:none; color:inherit;">👨‍💻 Usage</a></span>
-  </div>
+ <div style="font-size:1.3em; line-height:2;">
+  <span><a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a></span>
+  &nbsp;&bull;&nbsp;
+  <span><a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a></span>
+  &nbsp;&bull;&nbsp;
+  <span><a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a></span>
+  &nbsp;&bull;&nbsp;
+  <span><a href="#usage" style="text-decoration:none; color:inherit;">👨‍💻 Usage</a></span>
+</div>
+
 </div>
 
 ## <a name="about-project"></a>📜 About Project
@@ -48,7 +49,7 @@ For full details, see the [project subject](README_files/philo_subject.pdf).
 
 ---
 
-## <a name="mandatory-part"></a>🔷 Mandatory Part
+## 🔷 Mandatory Part
 
 - Philosophers sit at a **round table**.  
 - A **bowl of spaghetti** is in the center.  
