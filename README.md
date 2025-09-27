@@ -4,10 +4,12 @@
 
 # Philosophers Project
 
+-
 ## [📜 About Project](About.md) · [🔷 Mandatory Part](Mandatory.md) · [🌟 Bonus Part](Bonus.md) · [💡 Skills Acquired](Skills.md)
 
 </div>
 
+---
 # Usage
 
 ## 📜 About Project
