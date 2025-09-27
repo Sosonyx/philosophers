@@ -8,8 +8,7 @@
 Philosophers  
 
 ---
-![Stats du repo](https://github-readme-stats.vercel.app/api/pin/?username=dpetrosy&repo=42-Philosophers&theme=radical)
-![Commits](https://img.shields.io/github/commit-activity/m/dpetrosy/42-Philosophers?style=for-the-badge)
+![Stats du repo](https://github-readme-stats.vercel.app/api/pin/?username=dpetrosy&repo=42-Philosophers&theme=dark)
 
 ## 🔹 Jump to Section
 
