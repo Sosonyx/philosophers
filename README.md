@@ -5,22 +5,23 @@
 </div>
 
 <div align="center">
-  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+  <span style="font-weight:bold; font-size:2em;">
     <a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a>
   </span>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+  <span style="font-weight:bold; font-size:2em;">
     <a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a>
   </span>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+  <span style="font-weight:bold; font-size:2em;">
     <a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a>
   </span>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+  <span style="font-weight:bold; font-size:2em;">
     <a href="#skills-acquired" style="text-decoration:none; color:inherit;">💡 Skills Acquired</a>
   </span>
 </div>
+
 
 ---
 ## <a id="about-project"></a>📜 About Project
