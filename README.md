@@ -6,8 +6,9 @@
 
 ## [📜 About Project](About.md) · [🔷 Mandatory Part](Mandatory.md) · [🌟 Bonus Part](Bonus.md) · [💡 Skills Acquired](Skills.md)
 
-
 </div>
+
+# Usage
 
 ## 📜 About Project
 The **42 School Philosophers Project** is based on the [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
