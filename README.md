@@ -1,5 +1,7 @@
 # Philosophers
 
+![Diagramme des philosophes](img/philosophers.png "Diagramme des philosophes")
+
 Projet 42 – simulation du problème classique des philosophes mangeurs, avec gestion de threads et synchronisation.
 
 ---
