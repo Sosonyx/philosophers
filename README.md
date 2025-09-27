@@ -8,8 +8,6 @@
 
 </div>
 
-# Usage
-
 ## 📜 About Project
 The **42 School Philosophers Project** is based on the [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
 The main goal is to learn **concurrent programming** and **synchronization using shared resources**.
