@@ -8,8 +8,6 @@
 
 </div>
 
----
-
 # Usage
 
 ## 📜 About Project
@@ -18,14 +16,15 @@ The main goal is to learn **concurrent programming** and **synchronization using
 
 For full details, refer to the official project subject.
 
-> 🚀 **TL;DR**: Introduction to multithreading and multiprocessing:  
-> - Manage shared memory between threads or processes.  
-> - Use **mutexes**, **semaphores**, and coordinate access to shared resources.
+**🚀 TL;DR:**  
+Learn the basics of multithreading and multiprocessing:  
+- Manage shared memory between threads or processes.  
+- Use **mutexes**, **semaphores**, and coordinate access to shared resources.
 
 ---
 
 ## ⚠️ Note
-Following **42 School coding norms:**
+Following **42 School coding norms**:  
 - Functions must not exceed **25 lines**.  
 - All variables should be **declared at the top** of each function.  
 - Only **allowed functions** may be used.
@@ -35,7 +34,7 @@ Following **42 School coding norms:**
 ## 🔷 Mandatory Part
 The project simulates philosophers sitting at a **round table**:  
 - A **bowl of spaghetti** is placed in the center.  
-- Eating requires **two forks**, and there are as many forks as philosophers.  
+- Eating requires **two forks**, one for each hand.  
 - Each philosopher alternates between **eating**, **sleeping**, and **thinking**.  
 - If a philosopher doesn't eat within a certain time, they **die of starvation**.  
 - Philosophers **cannot communicate** with each other.
