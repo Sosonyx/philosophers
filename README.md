@@ -4,7 +4,7 @@
   # Philosophers Project
 </div>
 
-<div align="center" style="font-size:28px; line-height:2;">
+<div align="center" style="font-size:602px; line-height:2;">
   <a href="#about-project" style="text-decoration:none;">📜 About Project</a> &nbsp;&bull;&nbsp;
   <a href="#mandatory-part" style="text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&bull;&nbsp;
   <a href="#bonus-part" style="text-decoration:none;">🌟 Bonus Part</a> &nbsp;&bull;&nbsp;
