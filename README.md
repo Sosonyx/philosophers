@@ -5,25 +5,12 @@
 
 <div align="center">
 
-<a href="#about-project" style="font-size:20px; text-decoration:none;">📜 About Project</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#mandatory-part" style="font-size:20px; text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#bonus-part" style="font-size:20px; text-decoration:none;">🌟 Bonus Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#skills-acquired" style="font-size:20px; text-decoration:none;">💡 Skills Acquired</a>
+<a href="#about-project" style="font-size:28px; text-decoration:none;">📜 About Project</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#mandatory-part" style="font-size:28px; text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#bonus-part" style="font-size:28px; text-decoration:none;">🌟 Bonus Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#skills-acquired" style="font-size:28px; text-decoration:none;">💡 Skills Acquired</a>
 
 </div>
-
-## <a id="about-project"></a>📜 About Project
-Le contenu de la section About Project ici…
-
-## <a id="mandatory-part"></a>🔷 Mandatory Part
-Le contenu de la section Mandatory Part ici…
-
-## <a id="bonus-part"></a>🌟 Bonus Part
-Le contenu de la section Bonus Part ici…
-
-## <a id="skills-acquired"></a>💡 Skills Acquired
-Le contenu de la section Skills Acquired ici…
-
 
 ## <a id="about-project"></a>📜 About Project
 The **42 School Philosophers Project** is based on the [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
