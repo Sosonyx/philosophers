@@ -2,6 +2,7 @@
   
   ![Philosophers Diagram](philo/philosophers.png)
   # Philosophers Project
+</div>
 
 <div align="center">
 
