@@ -1,4 +1,5 @@
 <div align="center">
+  
 ![Philosophers Diagram](philo/philosophers.png)
 
 # Philosophers Project
