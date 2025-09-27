@@ -5,12 +5,12 @@
 </div>
 
 <div align="center">
-
-<a href="#about-project" style="font-size:100px; text-decoration:none;">📜 About Project</a> &nbsp;&bull;&nbsp;
-<a href="#mandatory-part" style="font-size:40px; text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&bull;&nbsp;
-<a href="#bonus-part" style="font-size:40px; text-decoration:none;">🌟 Bonus Part</a> &nbsp;&bull;&nbsp;
-<a href="#skills-acquired" style="font-size:40px; text-decoration:none;">💡 Skills Acquired</a>
-
+  <h2>
+    <a href="#about-project" style="text-decoration:none;">📜 About Project</a> &nbsp;&bull;&nbsp;
+    <a href="#mandatory-part" style="text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&bull;&nbsp;
+    <a href="#bonus-part" style="text-decoration:none;">🌟 Bonus Part</a> &nbsp;&bull;&nbsp;
+    <a href="#skills-acquired" style="text-decoration:none;">💡 Skills Acquired</a>
+  </h2>
 </div>
 
 ## <a id="about-project"></a>📜 About Project
