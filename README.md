@@ -62,11 +62,11 @@ For full details, see the [project subject](philo/philo_subject.pdf).
 
 ./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
 
-- **`number_of_philosophers`**: total number of philosophers around the table  
-- **`time_to_die`**: time in milliseconds a philosopher can live without eating after their last meal  
-- **`time_to_eat`**: time in milliseconds it takes a philosopher to eat (holds two forks during this time)  
-- **`time_to_sleep`**: time in milliseconds a philosopher spends sleeping  
-- **`number_of_times_each_philosopher_must_eat`** (optional): simulation stops if all philosophers have eaten at least this many times; otherwise, simulation continues until a philosopher dies
+- **`number_of_philosophers`**: total **number of philosophers** around the table  
+- **`time_to_die`**: time in milliseconds a philosopher can live **without eating** after their last meal  
+- **`time_to_eat`**: time in milliseconds it takes a philosopher **to eat** (holds two forks during this time)  
+- **`time_to_sleep`**: time in milliseconds a philosopher spends **sleeping**  
+- **`number_of_times_each_philosopher_must_eat`** (optional): simulation stops if all philosophers have **eaten at least this many times**; otherwise, simulation continues until a philosopher dies
 
 ### Logs Format
 
