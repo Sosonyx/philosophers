@@ -63,5 +63,60 @@ For full details, see the [project subject](README_files/philo_subject.pdf).
 
 ### Program Arguments
 
-```bash
 ./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
+
+- **`number_of_philosophers`**: total number of philosophers around the table  
+- **`time_to_die`**: time in milliseconds a philosopher can live without eating after their last meal  
+- **`time_to_eat`**: time in milliseconds it takes a philosopher to eat (holds two forks during this time)  
+- **`time_to_sleep`**: time in milliseconds a philosopher spends sleeping  
+- **`number_of_times_each_philosopher_must_eat`** (optional): simulation stops if all philosophers have eaten at least this many times; otherwise, simulation continues until a philosopher dies
+
+### Logs Format
+
+The program outputs actions of philosophers as follows (X is philosopher ID):
+
+timestamp_in_ms X has taken a fork  
+timestamp_in_ms X is eating  
+timestamp_in_ms X is sleeping  
+timestamp_in_ms X is thinking  
+timestamp_in_ms X died
+
+---
+
+## 🌟 Bonus Part
+
+- Philosophers are **processes** instead of threads  
+- Forks are **counting semaphores**, freely taken from the center  
+- Program arguments are identical to the mandatory part, but executable is `philo_bonus`
+
+---
+
+## 👨‍💻 Usage
+
+### Requirements
+
+- C language  
+- GCC compiler  
+- Standard C libraries
+
+### Compiling the Program
+
+**Mandatory Part:**
+
+cd path/to/philo && make
+
+**Bonus Part:**
+
+cd path/to/philo_bonus && make
+
+### Running the Program
+
+./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
+
+**Example:**
+
+./philo 5 800 200 200 7
+
+- The program outputs actions until a philosopher dies or all have eaten the required number of times.  
+- For the bonus part, run the `philo_bonus` executable instead.
+"""
