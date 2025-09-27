@@ -117,4 +117,4 @@ cd path/to/philo_bonus && make
 ```
 - The program outputs actions until a philosopher dies or all have eaten the required number of times.  
 - For the bonus part, run the `philo_bonus` executable instead.
-"""
+
