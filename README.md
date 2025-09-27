@@ -3,6 +3,8 @@
   ![Philosophers Diagram](philo/philosophers.png)
 </div>
 
+# Philosophers Project
+
 <div align="center">
 
 <a href="#about-project" style="font-size:28px; text-decoration:none;">📜 About Project</a> &nbsp;&nbsp;|&nbsp;&nbsp;
