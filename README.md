@@ -6,10 +6,15 @@
 # Philosophers Project
 
 <p align="center">
-[📜 About Project](About.md) · [🔷 Mandatory Part](Mandatory.md) · [🌟 Bonus Part](Bonus.md) · [💡 Skills Acquired](Skills.md)
+<a href="#about-project">📜 About Project</a> · 
+<a href="#mandatory-part">🔷 Mandatory Part</a> · 
+<a href="#bonus-part">🌟 Bonus Part</a> · 
+<a href="#skills-acquired">💡 Skills Acquired</a>
 </p>
 
-## 📜 About Project
+# Usage
+
+## <a id="about-project"></a>📜 About Project
 The **42 School Philosophers Project** is based on the [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
 The main goal is to learn **concurrent programming** and **synchronization using shared resources**.
 
@@ -20,24 +25,14 @@ Learn the basics of multithreading and multiprocessing:
 - Manage shared memory between threads or processes.  
 - Use **mutexes**, **semaphores**, and coordinate access to shared resources.
 
-
----
-
-## ⚠️ Note
-Following **42 School coding norms**:  
-- Functions must not exceed **25 lines**.  
-- All variables should be **declared at the top** of each function.  
-- Only **allowed functions** may be used.
-
----
-
-## 🔷 Mandatory Part
+## <a id="mandatory-part"></a>🔷 Mandatory Part
 The project simulates philosophers sitting at a **round table**:  
 - A **bowl of spaghetti** is placed in the center.  
 - Eating requires **two forks**, one for each hand.  
 - Each philosopher alternates between **eating**, **sleeping**, and **thinking**.  
 - If a philosopher doesn't eat within a certain time, they **die of starvation**.  
 - Philosophers **cannot communicate** with each other.
+
 
 ### Program Arguments
 ```bash
