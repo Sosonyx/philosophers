@@ -16,7 +16,7 @@ Philosophers
 # Usage
 
 ## 📜 About Project
-The **42 School Philosophers Project** is based on Dijkstra's classic dining philosophers problem.  
+The **42 School Philosophers Project** is based on [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
 The main goal is to learn **concurrent programming** and **synchronization using shared resources**.
 
 For full details, refer to the official project subject.
