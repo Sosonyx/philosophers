@@ -4,6 +4,7 @@
 
 # Philosophers Project
 
+
 ![Stats du repo](https://github-readme-stats.vercel.app/api/pin/?username=dpetrosy&repo=42-Philosophers&theme=dark)
 
 ## [📜 About Project](About.md) · [🔷 Mandatory Part](Mandatory.md) · [🌟 Bonus Part](Bonus.md) · [💡 Skills Acquired](Skills.md)
