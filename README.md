@@ -13,7 +13,7 @@
 
   <p>
     <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
-    <img src="https://img.shields.io/github/repo-size/dpetrosy/42-Philosophers?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/github/repo-size/Sosonyx/philosophers?style=for-the-badge&logo=github">
     <img src="https://img.shields.io/github/languages/count/dpetrosy/42-Philosophers?style=for-the-badge" />
     <img src="https://img.shields.io/github/languages/top/dpetrosy/42-Philosophers?style=for-the-badge" />
     <img src="https://img.shields.io/github/last-commit/dpetrosy/42-Philosophers?style=for-the-badge" />
