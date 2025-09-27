@@ -104,17 +104,17 @@ $ cd path/to/philo && make
 ```
 
 **Bonus Part:**
-
+```shell
 cd path/to/philo_bonus && make
-
+```
 ### Running the Program
-
+```shell
 ./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
-
+```
 **Example:**
-
+```shell
 ./philo 5 800 200 200 7
-
+```
 - The program outputs actions until a philosopher dies or all have eaten the required number of times.  
 - For the bonus part, run the `philo_bonus` executable instead.
 """
