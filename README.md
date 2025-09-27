@@ -8,7 +8,7 @@
   <h1>Philosophers Project</h1>
 
   <p align="center">
-    For further information about 42cursus and its projects, see <a href="https://42.fr/le-campus-de-paris/diplome-informatique/"><b>42cursus repo</b></a>.
+    For further information about 42cursus and its projects, see <a href="https://42.fr/le-campus-de-paris/diplome-informatique/"><b>42school</b></a>.
   </p>
 
   <p>
@@ -36,7 +36,7 @@
 > 42 School Philosophers project based on Edsger Dijkstra's famous [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
 > Learn **concurrent programming** and **shared memory synchronization**.
 
-For full details, see the [project subject](README_files/philo_subject.pdf).
+For full details, see the [project subject](philo/philo_subject.pdf).
 
 🚀 **TL;DR**: Introduction to multithreading and multiprocessing.  
 - Work on shared memory between threads/processes.  
