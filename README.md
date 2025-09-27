@@ -59,9 +59,9 @@ For full details, see the [project subject](philo/philo_subject.pdf).
 - No communication between philosophers.
 
 ### Program Arguments
-
+```shell
 ./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
-
+```
 - **`number_of_philosophers`**: total **number of philosophers** around the table  
 - **`time_to_die`**: time in milliseconds a philosopher can live **without eating** after their last meal  
 - **`time_to_eat`**: time in milliseconds it takes a philosopher **to eat** (holds two forks during this time)  
