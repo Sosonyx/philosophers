@@ -1,12 +1,10 @@
 <div align="center">
-  
-![Philosophers Diagram](philo/philosophers.png)
+  ![Philosophers Diagram](philo/philosophers.png)
+</div>
 
 # Philosophers Project
 
 ## [📜 About Project](About.md) · [🔷 Mandatory Part](Mandatory.md) · [🌟 Bonus Part](Bonus.md) · [💡 Skills Acquired](Skills.md)
-
-</div>
 
 # Usage
 
@@ -20,6 +18,7 @@ For full details, refer to the official project subject.
 Learn the basics of multithreading and multiprocessing:  
 - Manage shared memory between threads or processes.  
 - Use **mutexes**, **semaphores**, and coordinate access to shared resources.
+
 
 ---
 
