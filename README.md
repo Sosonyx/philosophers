@@ -4,11 +4,22 @@
   # Philosophers Project
 </div>
 
-<div align="center" style="font-size:602px; line-height:2;">
-  <a href="#about-project" style="text-decoration:none;">📜 About Project</a> &nbsp;&bull;&nbsp;
-  <a href="#mandatory-part" style="text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&bull;&nbsp;
-  <a href="#bonus-part" style="text-decoration:none;">🌟 Bonus Part</a> &nbsp;&bull;&nbsp;
-  <a href="#skills-acquired" style="text-decoration:none;">💡 Skills Acquired</a>
+<div align="center">
+  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+    <a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a>
+  </span>
+  &nbsp;&bull;&nbsp;
+  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+    <a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a>
+  </span>
+  &nbsp;&bull;&nbsp;
+  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+    <a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a>
+  </span>
+  &nbsp;&bull;&nbsp;
+  <span style="font-weight:bold; font-size:1.5em; text-decoration:none;">
+    <a href="#skills-acquired" style="text-decoration:none; color:inherit;">💡 Skills Acquired</a>
+  </span>
 </div>
 
 ---
