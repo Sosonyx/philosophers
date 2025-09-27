@@ -1,49 +1,68 @@
-# Logo
-Philosophers Project  
-42 Paris Philosophers  
+# Philosophers Project
 
-For further information about 42cursus and its projects, please refer to 42cursus repo.
+![Diagram](img/philosophers.png)
 
----
-
-📜 **About Project · 🔷 Mandatory Part · 🌟 Bonus Part · 👨‍💻 Usage**
+42 Yerevan – Dining Philosophers Project
 
 ---
 
-## 📜 About Project
+## 📜 Table of Contents
 
-42 School Philosophers project designed around Edsger Dijkstra's famous dining philosophers problem.  
-For this project, we must learn about concurrent programming and shared memory synchronization.
-
-For detailed information, refer to the subject of this project.
-
-🚀 **TLDR:** This project is an introduction to the basics of multithreading and multiprocessing.  
-Work on the same memory space, learn about mutexes, semaphores, and shared memory.
+- [About Project](#about-project)  
+- [🔷 Mandatory Part](#mandatory-part)  
+- [🌟 Bonus Part](#bonus-part)  
+- [👨‍💻 Usage](#usage)  
 
 ---
 
-### Note
+## About Project
 
-Because of 42 School norm requirements:
-
-- Each function can't have more than 25 lines of code.  
-- All variables are declared and aligned at the top of each function.  
-- Project should be created just with allowed functions otherwise it's cheating.
-
-
-## Main Functions
-
-- `main(int argc, char **argv)` : parses the arguments, initializes the table, and starts the simulation.  
-- Secure argument parsing and validation (valid numbers, greater than zero).  
-- `routine(void *arg)` : main routine for each philosopher (taking forks, eating, sleeping, thinking).  
-- `take_forks(t_philo *philo)` : manages taking forks with proper synchronization.  
-- `eat(t_philo *philo)` : updates the last meal time and increments the meal counter.  
-- `sleep(t_philo *philo)` : simulates the philosopher sleeping and then thinking.  
-- `monitoring(void *ptr)` : monitors the philosophers' health and stops the simulation if one dies.  
-- Thread management (`pthread_create`, `pthread_join`) and mutexes for the mandatory version.  
-- Process and semaphore management (`sem_open`, `sem_wait`, `sem_post`) for the bonus version.
+42 School Philosophers project based on Dijkstra's dining philosophers problem.  
+Learn concurrent programming, shared memory synchronization, mutexes, and semaphores.
 
 ---
+
+## 🔷 Mandatory Part
+
+- Threads and mutexes version  
+- Each philosopher runs in its own thread  
+- Proper synchronization to avoid deadlocks  
+- Functions: `routine`, `take_forks`, `eat`, `sleep`, `monitoring`  
+
+[Back to top](#philosophers-project)
+
+---
+
+## 🌟 Bonus Part
+
+- Processes and semaphores version  
+- Each philosopher runs in its own process  
+- Shared memory for state tracking  
+- Semaphore-based fork management  
+
+[Back to top](#philosophers-project)
+
+---
+
+## 👨‍💻 Usage
+
+**Compile and run:**
+
+    make
+    ./philo 4 410 200 200
+
+**Bonus version:**
+
+    make bonus
+    ./philo_bonus 4 410 200 200
+
+**Example output:**
+
+    0 1 has taken a fork
+    0 1 has taken a fork
+    0 1 is eating
+    200 1 is sleeping
+
 
 ## Example Execution
 
