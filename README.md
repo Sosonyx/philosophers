@@ -4,8 +4,6 @@
 
 # Philosophers Project
 
-42 Paris
-Philosophers 
 
 ![Stats du repo](https://github-readme-stats.vercel.app/api/pin/?username=dpetrosy&repo=42-Philosophers&theme=dark)
 
@@ -16,12 +14,12 @@ Philosophers
 # Usage
 
 ## 📜 About Project
-The **42 School Philosophers Project** is based on Dijkstra's classic dining philosophers problem.  
+The **42 School Philosophers Project** is based on [Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).  
 The main goal is to learn **concurrent programming** and **synchronization using shared resources**.
 
 For full details, refer to the official project subject.
 
-🚀 **TL;DR**: This project is an introduction to multithreading and multiprocessing.  
+> 🚀 **TL;DR**: This project is an introduction to multithreading and multiprocessing.  
 - Manage shared memory between threads or processes.  
 - Learn to use **mutexes**, **semaphores**, and coordinate access to shared resources.
 
