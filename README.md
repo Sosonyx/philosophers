@@ -1,9 +1,9 @@
 <div align="center">
   
   ![Philosophers Diagram](philo/philosophers.png)
-</div>
+  # Philosophers Project
 
-# Philosophers Project
+</div>
 
 <div align="center">
 
