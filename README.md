@@ -49,7 +49,7 @@ For full details, see the [project subject](README_files/philo_subject.pdf).
 
 ---
 
-## 🔷 Mandatory Part
+## <a name="about-project"></a>🔷 Mandatory Part
 
 - Philosophers sit at a **round table**.  
 - A **bowl of spaghetti** is in the center.  
@@ -80,7 +80,7 @@ timestamp_in_ms X died
 ```
 ---
 
-## 🌟 Bonus Part
+## <a name="about-project"></a>🌟 Bonus Part
 
 - Philosophers are **processes** instead of threads  
 - Forks are **counting semaphores**, freely taken from the center  
@@ -88,7 +88,7 @@ timestamp_in_ms X died
 
 ---
 
-## 👨‍💻 Usage
+## <a name="about-project"></a>👨‍💻 Usage
 
 ### Requirements
 
