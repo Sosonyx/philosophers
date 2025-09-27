@@ -3,14 +3,12 @@
   ![Philosophers Diagram](philo/philosophers.png)
   # Philosophers Project
 
-</div>
-
 <div align="center">
 
-<a href="#about-project" style="font-size:28px; text-decoration:none;">📜 About Project</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#mandatory-part" style="font-size:28px; text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#bonus-part" style="font-size:28px; text-decoration:none;">🌟 Bonus Part</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#skills-acquired" style="font-size:28px; text-decoration:none;">💡 Skills Acquired</a>
+<a href="#about-project" style="font-size:40px; text-decoration:none;">📜 About Project</a> &nbsp;&bull;&nbsp;
+<a href="#mandatory-part" style="font-size:40px; text-decoration:none;">🔷 Mandatory Part</a> &nbsp;&bull;&nbsp;
+<a href="#bonus-part" style="font-size:40px; text-decoration:none;">🌟 Bonus Part</a> &nbsp;&bull;&nbsp;
+<a href="#skills-acquired" style="font-size:40px; text-decoration:none;">💡 Skills Acquired</a>
 
 </div>
 
