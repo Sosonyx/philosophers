@@ -8,6 +8,7 @@
 Philosophers  
 
 ---
+![Langages utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=dpetrosy&layout=compact&theme=radical)
 
 ## 🔹 Jump to Section
 
