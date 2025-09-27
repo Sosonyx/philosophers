@@ -4,8 +4,7 @@
 
 ![Philosophers Diagram](img/philosophers.png)
 
-42 Paris -- Philosophers  
-For further information about 42cursus and its projects, please refer to the [42cursus repository](https://github.com/42cursus).
+42 Paris Philosophers  
 
 ---
 
