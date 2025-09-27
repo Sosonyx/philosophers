@@ -34,11 +34,11 @@ Projet 42 – simulation du problème classique des philosophes mangeurs, avec g
 
 - `main(int argc, char **argv)` : parse les arguments, initialise la table et lance la simulation.  
 - Parsing sécurisé et validation des arguments (nombres valides, supérieurs à zéro).  
-- `ft_routine(void *philo)` : routine principale de chaque philosophe (prendre les fourchettes, manger, dormir, penser).  
-- `ft_take_forks(t_philo *philo)` : gestion de la prise des fourchettes avec synchronisation.  
-- `ft_eat(t_philo *philo)` : met à jour le temps du dernier repas et incrémente le compteur de repas.  
-- `ft_sleep_think(t_philo *philo)` : simule le sommeil puis la réflexion du philosophe.  
-- `ft_monitoring(t_table *table)` : surveille la santé des philosophes et arrête la simulation si l’un d’eux meurt.  
+- `routine(void *arg)` : routine principale de chaque philosophe (prendre les fourchettes, manger, dormir, penser).  
+- `take_forks(t_philo *philo)` : gestion de la prise des fourchettes avec synchronisation.  
+- `eat(t_philo *philo)` : met à jour le temps du dernier repas et incrémente le compteur de repas.  
+- `sleep(t_philo *philo)` : simule le sommeil puis la réflexion du philosophe.  
+- `monitoring(void *ptr)` : surveille la santé des philosophes et arrête la simulation si l’un d’eux meurt.  
 - Gestion des threads (`pthread_create`, `pthread_join`) et des mutex pour la version mandatory.  
 - Gestion des processus et sémaphores (`sem_open`, `sem_wait`, `sem_post`) pour la version bonus.
 
