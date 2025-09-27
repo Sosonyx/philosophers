@@ -37,11 +37,11 @@
 > Learn **concurrent programming** and **shared memory synchronization**.
 
 For full details, see the [project subject](philo/philo_subject.pdf).
-
+```
 🚀 **TL;DR**: Introduction to multithreading and multiprocessing.  
 - Work on shared memory between threads/processes.  
 - Use **mutexes**, **semaphores**, and coordinate access.
-
+```
 > [!NOTE]    
 > - Functions ≤ 25 lines.  
 > - Variables declared at the top.  
