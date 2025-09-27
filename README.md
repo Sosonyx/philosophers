@@ -5,7 +5,8 @@
 # Philosophers Project
 
 42 Paris
-Philosophers  
+Philosophers 
+
 ![Stats du repo](https://github-readme-stats.vercel.app/api/pin/?username=dpetrosy&repo=42-Philosophers&theme=dark)
 
 ## 🔹 Jump to Section
