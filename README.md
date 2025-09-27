@@ -74,13 +74,13 @@ For full details, see the [project subject](README_files/philo_subject.pdf).
 ### Logs Format
 
 The program outputs actions of philosophers as follows (X is philosopher ID):
-
+```
 timestamp_in_ms X has taken a fork  
 timestamp_in_ms X is eating  
 timestamp_in_ms X is sleeping  
 timestamp_in_ms X is thinking  
 timestamp_in_ms X died
-
+```
 ---
 
 ## 🌟 Bonus Part
@@ -103,7 +103,9 @@ timestamp_in_ms X died
 
 **Mandatory Part:**
 
-cd path/to/philo && make
+```shell
+$ cd path/to/philo && make
+```
 
 **Bonus Part:**
 
