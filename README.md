@@ -2,7 +2,7 @@
 
 # Philosophers Project
 
-![Philosophers Diagram](philo/img/philosophers.png)
+![Philosophers Diagram](philo/philosophers.png)
 
 42 Paris Philosophers  
 
