@@ -21,7 +21,7 @@ The main goal is to learn **concurrent programming** and **synchronization using
 
 For full details, refer to the official project subject.
 
-🚀 **TL;DR**: This project is an introduction to multithreading and multiprocessing.  
+> 🚀 **TL;DR**: This project is an introduction to multithreading and multiprocessing.  
 - Manage shared memory between threads or processes.  
 - Learn to use **mutexes**, **semaphores**, and coordinate access to shared resources.
 
