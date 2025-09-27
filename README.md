@@ -5,15 +5,12 @@
     <img src="philo/philosophers.png" alt="Logo" width="120" height="120">
   </a>
 
-  <!-- Project Name -->
   <h1>Philosophers Project</h1>
 
-  <!-- Short Description -->
   <p align="center">
     For further information about 42cursus and its projects, see <a href="https://42.fr/le-campus-de-paris/diplome-informatique/"><b>42cursus repo</b></a>.
   </p>
 
-  <!-- Badges -->
   <p>
     <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
     <img src="https://img.shields.io/github/repo-size/dpetrosy/42-Philosophers?style=for-the-badge&logo=github">
@@ -22,7 +19,6 @@
     <img src="https://img.shields.io/github/last-commit/dpetrosy/42-Philosophers?style=for-the-badge" />
   </p>
 
-  <!-- Menu -->
   <div style="font-size:1.3em; line-height:2;">
     <span><a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a></span>
     &nbsp;&bull;&nbsp;
@@ -45,7 +41,7 @@ For full details, see the [project subject](README_files/philo_subject.pdf).
 - Work on shared memory between threads/processes.  
 - Use **mutexes**, **semaphores**, and coordinate access.
 
-> **Note:**  
+> [!NOTE]    
 > - Functions ≤ 25 lines.  
 > - Variables declared at the top.  
 > - Only allowed functions.
