@@ -2,7 +2,7 @@
 <div align="center">
   <!-- Logo -->
   <a href="https://github.com/dpetrosy/42-Philosophers">
-    <img src="README_files/logo.png" alt="Logo" width="80" height="80">
+    <img src="philo/philosophers.png" alt="Logo" width="80" height="80">
   </a>
 
   <!-- Project Name -->
