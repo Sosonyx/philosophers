@@ -10,8 +10,7 @@
 
   <!-- Short Description -->
   <p align="center">
-    <b>42 Yerevan Philosophers</b><br>
-    For further information about 42cursus and its projects, see <a href="https://github.com/dpetrosy/42cursus"><b>42cursus repo</b></a>.
+    For further information about 42cursus and its projects, see <a href="https://42.fr/le-campus-de-paris/diplome-informatique/"><b>42cursus repo</b></a>.
   </p>
 
   <!-- Badges -->
