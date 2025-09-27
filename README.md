@@ -38,9 +38,9 @@
 
 For full details, see the [project subject](philo/philo_subject.pdf).
 ```
-🚀 **TL;DR**: Introduction to multithreading and multiprocessing.  
+🚀 TL;DR: Introduction to multithreading and multiprocessing.  
 - Work on shared memory between threads/processes.  
-- Use **mutexes**, **semaphores**, and coordinate access.
+- Use mutexes, semaphores, and coordinate access.
 ```
 > [!NOTE]    
 > - Functions ≤ 25 lines.  
