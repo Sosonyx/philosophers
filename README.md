@@ -5,21 +5,13 @@
 </div>
 
 <div align="center">
-  <span style="font-weight:bold; font-size:2em;">
-    <a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a>
-  </span>
+  <strong><big><a href="#about-project" style="text-decoration:none; color:inherit;">📜 About Project</a></big></strong>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:2em;">
-    <a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a>
-  </span>
+  <strong><big><a href="#mandatory-part" style="text-decoration:none; color:inherit;">🔷 Mandatory Part</a></big></strong>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:2em;">
-    <a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a>
-  </span>
+  <strong><big><a href="#bonus-part" style="text-decoration:none; color:inherit;">🌟 Bonus Part</a></big></strong>
   &nbsp;&bull;&nbsp;
-  <span style="font-weight:bold; font-size:2em;">
-    <a href="#skills-acquired" style="text-decoration:none; color:inherit;">💡 Skills Acquired</a>
-  </span>
+  <strong><big><a href="#skills-acquired" style="text-decoration:none; color:inherit;">💡 Skills Acquired</a></big></strong>
 </div>
 
 
