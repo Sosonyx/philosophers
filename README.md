@@ -4,7 +4,8 @@
 
 ![Philosophers Diagram](philo/philosophers.png)
 
-42 Paris Philosophers  
+42 Paris
+Philosophers  
 
 ---
 
